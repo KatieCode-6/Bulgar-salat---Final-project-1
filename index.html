@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salad 🥗</title>
+    <style>
+        body {
+            background-color:rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            font-size: 26px;
+            text-align: center;
+            color: #056ec4;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            width: 250px;
+            padding: 20px;
+            border-radius: 40px;
+        }
+
+        .description {
+            font-size: 18px;
+            line-height: 1.25;
+            margin: 20px 0 10px;
+        }
+
+        #cook-time {
+            font-weight: bold;
+            font-size: smaller;
+        }
+
+        .ingredients li {
+            list-style: square;
+        }
+
+        .external-link {
+            color: #056ec4;
+            text-decoration: none;
+            font-size: 18px;
+
+        }
+
+        .external-link:hover {
+            text-decoration: underline;
+        }
+
+        button {
+            display: block;
+            margin: 0 auto;
+            color: white;
+            background-color: #056ec4;
+            font-size: 18px;
+            padding: 15px 20px;
+            border: none;
+            border-radius: 18px;
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+            transition: all 200ms ease-in-out;
+
+        }
+
+        button:hover {
+            opacity: 0.9;
+            cursor: pointer;
+        }
+
+        
+        footer {
+            text-align: center;
+            padding: 30px;
+        }
+
+        .citation {
+            padding: 15px 20px
+
+        }
+
+        .container {
+           max-width: 600px;
+           margin: 0 auto;
+           padding: 30px 60px; 
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="containter">
+    <h1>
+        Bulgur, Grape and Walnut Salad
+</h1> 
+<hr>
+
+<img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/000/645/original/C43FADC9-7C57-4FBF-A148-5E4B30D8023D.jpeg?1587232612" 
+width="200"
+alt= "Bulgur Salad"
+
+/>
+<hr>
+
+<p class="description">
+    <strong>Bulgur</strong> is a whole grain made from cracked wheat. It's packed with vitamins, minerals and fiber. Fiber-rich foods like
+    bulgur may reduce chronic disease risk, promote weight loss and improve digestion and gut health. It's easy to cook and
+    can be added to many dishes, including salads, stews and breads.
+</p> 
+
+<p id="cook-time">
+    Total-time: min. 30 minutes.
+</p>
+
+<h2>
+    Ingredients
+</h2>
+
+<ul class="ingredients">
+    <li>
+        125g coarse burgur wheat
+    </li>
+    <li>
+        300ml water
+    </li>
+    <li>
+        handful of cherry tomatoes
+    </li>
+    <li>
+        140g seedless white grapes, halved
+    </li>
+    <li>
+        1tbs walnut oil
+    </li>
+    <li>
+        1tbs olive oil
+    </li>
+    <li>
+        1tbs pul biber (Turkish pepper flakes)
+    </li>
+    <li>
+        30g walnut pieces
+    </li>
+    <li>
+        5tbs choopped flat-leaf parsley
+    </li>
+    <li>
+        a few springs of dill (finaly chopped)
+    </li>
+    <li>
+        pinch of salt
+    </li>
+</ul> 
+
+<h2>
+    Preparation
+</h2>
+
+<ol>
+    <li>
+        <p>Place the bulgur and water in a medium plan, bring to the boil, 
+        then remove from the heat, clamp a lid on and leave to steam-cook for 15-20 minutes.</p>
+    </li>
+    <li>
+        <p>Put the grapes, tomatoes, oils and pul biber in a large bowl. When the bulgur is almost ready,
+        toast the walnuts in a hot, dry frying pan and set to one side.</p>
+    </li>
+    <li>
+        <p>Then toss the steamed burgur trough the salad, add the walnuts and herbs with salt to teste,
+        stir them through and serve with a bottle of Bulgarian Ugni Blanc (or plain old Sauvignon Blanc).</p>
+    </li>
+</ol>
+
+<p class="citation"> 
+    <em>Find this recipe and more</em> <a href="https://www.bbcgoodfood.com/recipes/collection/healthy-salad"
+    target="_blank" class="external-link" >here.</a>
+</p>
+
+<button> 
+    Contact me
+</button>
+
+<footer>
+    <em>This page was built by <strong>Katarina Kovacova</strong></em>
+</footer>
+</div>
+<script>
+    function contactMe() {
+    let name = prompt("What is your name?");
+    let email = prompt("What is your email address?");
+    let emoji = prompt("What is your favorite emoji?");
+
+    alert( 
+        "Thank you " + name + " , we will be in touch, meanwhile have a lot of salad! " + emoji 
+        );
+    }
+
+    let contactButton = document.querySelector("button");
+    contactButton.addEventListener("click", contactMe);
+
+
+</script>
+</body>
+
+
+</html>
